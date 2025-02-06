@@ -17,7 +17,7 @@ export default function ProjectWidget() {
   return (
     <div>
       <div
-        className="flex gap-4"
+        className="flex flex-col sm:flex-row gap-4 w-[300px] h-[400px] sm:w-[550px] sm:h-[200px]"
         onClick={() => {
           setIsOpen(true);
         }}
@@ -28,7 +28,7 @@ export default function ProjectWidget() {
           className="rounded-xl border"
           src={null}
         ></Image>
-        <div className="w-64 flex flex-col text-gray-400">
+        <div className="w-[250px] h-[200px] flex flex-col text-gray-400">
           <h2 className="text-white">Project Name</h2>
           <p className="flex-1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
